@@ -1,0 +1,183 @@
+*, *::before, *::after{
+    font-family: 'Open Sans', sans-sherif;
+}
+
+.white-theme{
+    background-color: rgb(255, 255, 255);
+}
+
+.dark-theme{
+    background-color: rgb(0, 0, 0);
+}
+
+nav.menu-nav{
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+a.menu-title{
+    /* border: 1px black solid; */
+    text-decoration: none;
+    list-style-type: none;
+    text-align: center;
+    margin: 1vw;
+    font-size: 20px;
+    padding: 1vw;
+    transition: 1s;
+    color  : white;
+}
+
+a.menu-title:hover{
+    /* border: 1px rgb(154, 23, 241) solid; */
+    text-decoration: none;
+    list-style-type: none;
+    text-align: center;
+    margin: 10px;
+    font-size: 22px;
+    padding: 10px;
+    transition: 1s;
+    
+}
+
+li.nav-item{
+    list-style-type: none;
+    text-decoration-style: none;
+}
+
+li.nav-item:first-child{
+    font-size: 23px;
+    padding-right: 25vw;
+}
+
+ul.menu-ul{
+    height: 10vh;
+    /* background: #CCCCCC; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin-left: 50%; */
+    left: 0px;
+}
+
+div.BG-menu{
+    background-image: url('img/purpleBG.jpg');
+    height: 15vh;
+    margin: -8px;
+}
+
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: rgb(147, 59, 219); /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+  }
+  
+  
+#bite {
+     /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 90px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: rgb(147, 59, 219); /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+    background-color:rgb(87, 137, 202) /* #555 Add a dark-grey background on hover */
+}
+
+#bite:hover {
+    background-color: rgb(87, 137, 202); /* Add a dark-grey background on hover */
+}
+
+.logo{
+    position: absolute;
+    top: 17vh;
+    left: 2vw;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 100%;
+    overflow: hidden;
+    z-index: 99;
+}
+
+.logo::before{
+    content: "";
+    background: url(imgBG/rsz_moi.jpg);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+
+.logo::after{
+    content: '';
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    background-color: hsla(10, 80%, 80%, .6);
+    bottom: 0;
+    left: -50%;
+    border-radius: 35%;
+    animation: waves 5s ease-in-out alternate infinite;
+}
+
+@keyframes waves {
+    to{
+        transform: translateY(-50%) rotate(540deg);
+    }
+}
+
+#Gtitle{
+    font-size: 100px;
+    /* font-weight: 200; */
+    display: inline-block;
+    /* color: #f1f1f1; */
+    position: relative;
+    z-index: 1;
+    margin-top: 28vh;
+    margin-left: 25%;
+    white-space: nowrap;
+}
+
+#Gtitle::after{
+    content: "";
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 3px;
+    background-color: white;
+    right: -15px;
+    top: 0;
+    animation: cursor 1s infinite;
+}
+
+@keyframes cursor {
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
