@@ -49,6 +49,8 @@ li.nav-item{
 li.nav-item:first-child{
     font-size: 23px;
     padding-right: 25vw;
+    top: 1px;
+    white-space: nowrap;
 }
 
 ul.menu-ul{
@@ -110,8 +112,8 @@ div.BG-menu{
 
 .logo{
     position: absolute;
-    top: 17vh;
-    left: 2vw;
+    top: 2vh;
+    left: 28vw;
     width: 5rem;
     height: 5rem;
     border-radius: 100%;
@@ -133,7 +135,7 @@ div.BG-menu{
     position: absolute;
     width: 200%;
     height: 200%;
-    background-color: hsla(10, 80%, 80%, .6);
+    background-color: hsla(200, 100%, 100%, .6);
     bottom: 0;
     left: -50%;
     border-radius: 35%;

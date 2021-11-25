@@ -1,4 +1,17 @@
-:root {
+/* all colors for moon effect */
+ :root { 
+    --v1: #3d313f;
+    --v2: #8a65cc;
+    --v3: #5e30d9;
+    --transparentv3: #5e30d900;
+    --v4: #3b1895;
+    --s1: #583a68;
+    --s2: #382e44;
+    --cloud: #5e30d900;
+  } 
+
+  /* all colors for sun effect */
+  :root { 
     --v1: #be91c6;
     --v2: #8a65cc;
     --v3: #5e30d9;
@@ -8,6 +21,7 @@
     --s2: #ff846e;
     --cloud: #fea798;
   }
+
   
   .landscape:after,
   .landscape:before,
@@ -220,6 +234,31 @@
     transform: scaleX(-1);
   }
   
+  /* .moon {
+    background: white;
+    border-radius: 50%;
+    width: 20vmin;
+    height: 20vmin;
+    left: calc(60% - 10vmin);
+    top: 100%;
+    transform: translate3d(0, 0, 0);
+    -webkit-animation: rise 20s infinite;
+            animation: rise 20s infinite;
+    box-shadow: 0 0 10px white;
+  } */
+
+  .moon {
+    border-radius: 50%;
+    box-shadow: 15px 15px 0 0 rgba(255, 255, 255, 0.6);
+    width: 20vmin;
+    height: 20vmin;
+    left: calc(60% - 10vmin);
+    top: 100%;
+    transform: translate3d(0, 0, 0);
+    -webkit-animation: rise 20s infinite;
+            animation: rise 20s infinite;
+ }
+
   .sun {
     background: white;
     border-radius: 50%;
