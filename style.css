@@ -120,6 +120,7 @@ div.BG-menu{
 }
 
 .logo{
+    cursor: not-allowed;
     position: absolute;
     top: 2vh;
     left: 28vw;
@@ -243,11 +244,16 @@ div.BG-menu{
 }
 
 .ligne {
-    height: 320px;
+    min-height: 320px;
     width: 8px;
+    /* left: 49.5%; */
+    /* transform: translate(-50%); */
     margin: 0 auto;
     margin-top: 8vh;
     background: #333;
+    position: flex;
+    align-items: center;
+    align-content: space-around;
 }
 
 .rond {
@@ -259,18 +265,19 @@ div.BG-menu{
     border: 1px solid #000;
     left: 50%;
     transform: translate(-50%);
+    /* left: 50%; */
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 40px;
 }
-/* 1000 - 160 + 80 / 3 =~ 306 */
 .r1{top: 25vh;}
 .r2{top: 70vh;}
 
 .box {
     /* top: 100px; */
     color: #333;
+    cursor: crosshair;
     width: 400px;
     min-height: 200px;
     padding: 20px;
@@ -385,3 +392,4 @@ div.BG-menu{
 .container p{
     margin-top: 3vh;
 }
+/* --------------------|------------------ */ 

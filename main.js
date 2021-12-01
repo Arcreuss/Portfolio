@@ -112,7 +112,6 @@ function ChangeSystem() { // when lightbutton is pressed, change between sun and
     document.documentElement.style.setProperty('--v7', '#fea798');
 
 
-
     // console.log("display sun");
     for(var value of iterator){ //value is the value inside DOMTokenList.values()
         // console.log('value = ' + value);
