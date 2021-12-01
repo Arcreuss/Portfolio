@@ -22,6 +22,10 @@ window.addEventListener("load", function(event){
         }
     }
 
+    window.addEventListener("scroll",() => {
+        ProgressSkills();
+    });
+
     mybuttonTop.addEventListener("click", event =>{
         TopFunction();
     })
@@ -33,6 +37,27 @@ window.addEventListener("load", function(event){
 
 })
 
+
+function ProgressSkills(){
+    const skills = document.getElementById('Skills');
+    const progressBars = document.querySelectorAll(".progress-bar");
+    const sectionPos = skills.getBoundingClientRect().top;
+    const screenPos = window.innerHeight;
+
+    if(sectionPos < screenPos){
+        progressBars.forEach(progressBar=> {
+            const value = progressBar.dataset.progress;
+            progressBar.style.opacity = 1;
+            progressBar.style.width = `${value}%`;
+        });
+    }else{
+        progressBars.forEach(p => {
+            p.style.opacity = 0;
+            p.style.width = 0;
+        });
+    }
+}
+
 // When the user clicks on the button, scroll to the top of the document
 function TopFunction() {
     document.body.scrollTop = 0; // For Safari
@@ -41,7 +66,9 @@ function TopFunction() {
 
 function ChangeLight() {
     var element = document.querySelector("body");
+    var menu = document.querySelector("nav-item");
     element.classList.toggle("dark-theme");
+    // menu.classList.toggle("dark-theme");
 
     
     
@@ -70,18 +97,19 @@ function ChangeLight() {
 function ChangeSystem() { // when lightbutton is pressed, change between sun and moon shape in BG
     var element = document.querySelector("body"); // get body
     const divSystem = document.querySelector("#System"); // get id="System" (div)
+    var menu = document.querySelector(".menu-title"); //all <a> in menu-nav
+    var job = document.querySelector(".Job");
 
     var iterator = element.classList; // element.classList return an iterator in js
     divSystem.classList.remove("moon"); //remove moon class
     divSystem.classList.add("sun"); //display sun shape
     document.documentElement.style.setProperty('--v1', '#be91c6');
-    document.documentElement.style.setProperty('--v2', '#8a65cc');
-    document.documentElement.style.setProperty('--v3', '#5e30d9');
-    document.documentElement.style.setProperty('--transparentv3v', '#5e30d900');
-    document.documentElement.style.setProperty('--v4', '#3b1895');
     document.documentElement.style.setProperty('--s1', '#fea798');
     document.documentElement.style.setProperty('--s2', '#ff846e');
     document.documentElement.style.setProperty('--cloud', '#fea798');
+    document.documentElement.style.setProperty('--v5', '#8a65cc');
+    document.documentElement.style.setProperty('--v6', '#ff846e');
+    document.documentElement.style.setProperty('--v7', '#fea798');
 
 
 
@@ -96,14 +124,12 @@ function ChangeSystem() { // when lightbutton is pressed, change between sun and
 
             //change all color for :root colors animation
             document.documentElement.style.setProperty('--v1', '#3d313f');
-            document.documentElement.style.setProperty('--v2', '#8a65cc');
-            document.documentElement.style.setProperty('--v3', '#5e30d9');
-            document.documentElement.style.setProperty('--transparentv3v', '#5e30d900');
-            document.documentElement.style.setProperty('--v4', '#3b1895');
             document.documentElement.style.setProperty('--s1', '#583a68');
             document.documentElement.style.setProperty('--s2', '#382e44');
             document.documentElement.style.setProperty('--cloud', '#5e30d900');
-            document.documentElement.style.setProperty('.logo::after', 'hsla(200, 100%, 100%, .6)');
+            document.documentElement.style.setProperty('--v5', '#3d313f');
+            document.documentElement.style.setProperty('--v6', '#8a65cc');
+            document.documentElement.style.setProperty('--v7', '#5e30d9');
             // console.log("display moon");
     
         }
