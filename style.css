@@ -245,15 +245,18 @@ div.BG-menu{
 
 .ligne {
     min-height: 320px;
+    height: auto;
     width: 8px;
-    /* left: 49.5%; */
     /* transform: translate(-50%); */
-    margin: 0 auto;
+    left: auto;
+    margin: auto;
     margin-top: 8vh;
     background: #333;
-    position: flex;
+    /* position: absolute; */
     align-items: center;
-    align-content: space-around;
+    align-content: space-around; 
+    display: flex;
+    justify-content: center;
 }
 
 .rond {

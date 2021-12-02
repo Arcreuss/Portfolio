@@ -28,14 +28,26 @@ window.addEventListener("load", function(event){
 
     mybuttonTop.addEventListener("click", event =>{
         TopFunction();
-    })
+    });
 
     mybuttonToggle.addEventListener("click", event =>{
         ChangeLight();
         ChangeSystem();
-    })
+    });
 
-})
+    const heightWindow = window.innerHeight;
+    console.log(heightWindow);
+    if(heightWindow == 931){
+        console.log('ök');
+        const box = document.querySelector(".education-timeline");
+        box.style.top = '520vh';
+        const ligne = document.querySelector(".ligne");
+        ligne.style.height = '500px';
+        // ligne.style.margin-top = '10px'
+
+    }
+
+});
 
 
 function ProgressSkills(){
