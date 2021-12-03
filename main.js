@@ -4,7 +4,7 @@ window.addEventListener("load", function(event){
 
     //Get the button:
     const mybuttonTop = document.getElementById("myBtn");
-    const mybuttonToggle = document.getElementById("bite");
+    const mybuttonToggle = document.getElementById("bit");
 
     // console.log(mybuttonTop);
     // console.log(mybuttonToggle);
@@ -126,8 +126,8 @@ function ChangeSystem() { // when lightbutton is pressed, change between sun and
     document.documentElement.style.setProperty('--v5', '#8a65cc');
     document.documentElement.style.setProperty('--v6', '#ff846e');
     document.documentElement.style.setProperty('--v7', '#fea798');
-    document.documentElement.style.setProperty('--v8', '#ff846e');
-    document.documentElement.style.setProperty('--v9', '#fea798');
+    document.documentElement.style.setProperty('--v8', '#f1f1f1');
+    document.documentElement.style.setProperty('--v9', '#f1f1f1');
 
 
 
