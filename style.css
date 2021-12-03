@@ -439,8 +439,34 @@ h1#Projects{
     width: 300px;
     text-align: center;
 }
+/* ---------------------------------------   HOBBIES */
 
+.hobbiesDv{
+    display: flex;
+    align-items: center;
+}
 
+.hobbiesBox{
+    display: flex;
+    align-items: center;
+}
+
+.hobbiesBox li{
+    margin-right: 100px;
+    list-style-type: none;
+    align-content: center;
+    width: 400px;
+    text-align: center;
+}
+
+.hobbiesBox li:first-child{
+    margin-right: 100px;
+    list-style-type: none;
+    align-content: center;
+    width: 400px;
+    text-align: center;
+    margin-left: 15vw;
+}
 /* --------------------------------------- REFERENCES */ 
 
 .references{
