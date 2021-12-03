@@ -126,6 +126,9 @@ function ChangeSystem() { // when lightbutton is pressed, change between sun and
     document.documentElement.style.setProperty('--v5', '#8a65cc');
     document.documentElement.style.setProperty('--v6', '#ff846e');
     document.documentElement.style.setProperty('--v7', '#fea798');
+    document.documentElement.style.setProperty('--v8', '#ff846e');
+    document.documentElement.style.setProperty('--v9', '#fea798');
+
 
 
     // console.log("display sun");
@@ -147,6 +150,9 @@ function ChangeSystem() { // when lightbutton is pressed, change between sun and
             document.documentElement.style.setProperty('--v5', '#3d313f');
             document.documentElement.style.setProperty('--v6', '#8a65cc');
             document.documentElement.style.setProperty('--v7', '#5e30d9');
+            document.documentElement.style.setProperty('--v8', '#5e30d9');
+            document.documentElement.style.setProperty('--v9', '#5789ca');
+
             // console.log("display moon");
     
         }

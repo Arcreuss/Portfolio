@@ -10,8 +10,8 @@
     --v6: #ff846e;
     --v7: #fea798;
     /* for boxes */
-    --v8: #5e30d9;
-    --v9: rgb(87 137 202));
+    --v8: #c97667;
+    --v9: #f3b8ae;
 }
 
 *, *::before, *::after{
@@ -296,7 +296,7 @@ div.BG-menu{
     padding: 20px;
     border-radius: 3px;
     height: auto;
-    background-image: linear-gradient(64deg, #5e30d9, rgb(87 137 202));
+    background-image: linear-gradient(64deg, var(--v8), var(--v9));
     box-shadow: 0 10px 15px rgba(0,0,0,0.5);
     position: absolute;
     left: 50%;
@@ -409,4 +409,6 @@ div.BG-menu{
 .container p{
     margin-top: 3vh;
 }
-/* --------------------|------------------ */ 
+/* --------------------------------------- REFERENCES */ 
+
+
