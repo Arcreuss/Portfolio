@@ -112,12 +112,13 @@ function ChangeSystem() { // when lightbutton is pressed, change between sun and
     const divSystem = document.querySelector("#System"); // get id="System" (div)
     var menu = document.querySelector(".menu-title"); //all <a> in menu-nav
     var job = document.querySelector(".Job");
-    var experience = document.querySelector("#experience-timeline");
-    var education = document.querySelector("#education-timeline");
+    const experience = document.querySelector("#experience-timeline");
+    const education = document.querySelector("#education-timeline");
 
     var iterator = element.classList; // element.classList return an iterator in js
     divSystem.classList.remove("moon"); //remove moon class
     divSystem.classList.add("sun"); //display sun shape
+    education.classList.remove("#education-dark");
     document.documentElement.style.setProperty('--v1', '#be91c6');
     document.documentElement.style.setProperty('--s1', '#fea798');
     document.documentElement.style.setProperty('--s2', '#ff846e');
@@ -135,6 +136,8 @@ function ChangeSystem() { // when lightbutton is pressed, change between sun and
             // divSystem.classList.replace("sun", "moon");
             divSystem.classList.remove("sun"); // if true display moon shape
             divSystem.classList.add("moon");
+            education.classList.add("#education-dark");
+
 
             //change all color for :root colors animation
             document.documentElement.style.setProperty('--v1', '#3d313f');

@@ -80,7 +80,8 @@ ul.menu-ul{
 }
 
 div.BG-menu{
-    background-image: url('img/purpleBG.jpg');
+    /* background-image: url('img/purpleBG.jpg'); */
+    background-image: linear-gradient(var(--v2), var(--v3));
     height: 15vh;
     margin: -8px;
 }
