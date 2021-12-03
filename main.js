@@ -152,3 +152,5 @@ function ChangeSystem() { // when lightbutton is pressed, change between sun and
         }
     }
 }
+
+//     background-image: linear-gradient(64deg, #5e30d9, rgb(87 137 202));
