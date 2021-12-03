@@ -1,4 +1,11 @@
+.body{
+    background-color: #f1f1f1;
+}
+
 :root{
+    --v1: #3d313f;
+    --v2: #8a65cc;
+    --v3: #5e30d9;
     /* for sun */
     --v5: #8a65cc;
     --v6: #ff846e;
@@ -226,16 +233,16 @@ div.BG-menu{
 
 
 /* ------------------------------------------- Experiences */
-.experience-timeline {
+#experience-timeline {
     /* margin-top: 1000px; */
     width: 99%;
     height: 80vh;
-    background: #f1f1f1;
+    /* background: #f1f1f1; */
     position: absolute;
     padding: 80px 0 250px 0;
 }
 
-.experience-timeline h1{
+#experience-timeline h1{
     position: relative;
     margin: auto;
     text-align: center;
@@ -326,16 +333,20 @@ div.BG-menu{
 } */
 
 /*----------------------------------- EDUCATION */
-.education-timeline{
+#education-timeline{
     top: 600vh;
     width: 99%;
     height: 80vh;
-    background: #f1f1f1;
+    /* background: #f1f1f1; */
     position: absolute;
     padding: 80px 0 250px 0;
 }
 
-.education-timeline h1{
+.education-dark{
+    background-image: linear-gradient(var(--v2), var(--v3));
+}
+
+#education-timeline h1{
     position: relative;
     margin: auto;
     text-align: center;

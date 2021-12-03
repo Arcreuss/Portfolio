@@ -80,11 +80,12 @@ function ChangeLight() {
     var element = document.querySelector("body");
     var menu = document.querySelector("nav-item");
     element.classList.toggle("dark-theme");
+    // div.classList.replace("foo", "bar"); // doesn't work
+    // expTimeline.style.background =  `rgb(19, 17, 17)`;
+
+
+
     // menu.classList.toggle("dark-theme");
-
-    
-    
-
 
     // setTimeout(()=> {
     //     ChangeSystem(element);
@@ -111,6 +112,8 @@ function ChangeSystem() { // when lightbutton is pressed, change between sun and
     const divSystem = document.querySelector("#System"); // get id="System" (div)
     var menu = document.querySelector(".menu-title"); //all <a> in menu-nav
     var job = document.querySelector(".Job");
+    var experience = document.querySelector("#experience-timeline");
+    var education = document.querySelector("#education-timeline");
 
     var iterator = element.classList; // element.classList return an iterator in js
     divSystem.classList.remove("moon"); //remove moon class
